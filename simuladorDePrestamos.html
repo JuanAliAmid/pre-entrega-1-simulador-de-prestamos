@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"><!--Toastify-->
+    <title>Simulador de préstamos</title>
 </head>
 <body>
-    <header>
 
-    </header>
     <main>
-        <h1>Simulador de prestamos</h1>
 
-        <input id="nombre" placeholder="Nombre de cliente">
-        <input id="monto" type="number" placeholder="Monto a solicitar">
-        <input id="cuotas" type="number" placeholder="Cantidad de cuotas">
+        <h1>Simulador de préstamos</h1>
 
-        <button id="botonAgregar">Agregar prestamo</button>
+            <section class="section-agregar">
+                <label for="nombre">Nombre de cliente:</label>
+                <input id="nombre" placeholder="Nombre de cliente">
+                <label for="monto">Monto a solicitar:</label>
+                <input id="monto" type="number" placeholder="Monto a solicitar">
+                <select id="cuotas" class="select">
+                    <option value="">Seleccionar cantidad de cuotas</option>
+                    <option value="0"> Un único pago</option>
+                    <option value="3">3 Cuotas → 10% de recargo</option>
+                    <option value="6">6 Cuotas → 15% de recargo</option>
+                    <option value="12">12 Cuotas → 20% de recargo</option>
+                </select>
+            
+                <button id="botonAgregar" class="botones">Agregar préstamo</button>
+            </section>
+        
+            <section class="section-buscar">
+                <label for="inputBuscar">Buscar por ID:</label>
+                <input id="inputBuscar" type="number" placeholder="ID del cliente a buscar">
+                <button id="botonBuscarId" class="botones">Buscar préstamo por ID de cliente</button>
+            </section>
 
-        <button id="botonListar">Listar prestamos</button>
-        <button id="botonTotal">Total de prestamos</button>
+            <section class="section-borrar">
+                <label for="id">Eliminar por ID:</label>
+                <input type="number" id="id" placeholder="Ingrese el id">
+                <button id="idEliminar" class="botones">Eliminar préstamo por id</button>
+            </section>
+                
+            <section class="section-listar-total">
+                <button id="botonTotal" class="botones">Total de préstamos otorgados</button>
+                <button id="botonListar" class="botones">Listado de préstamos</button>    
+            </section>
 
-        <input id="inputBuscar" placeholder="Nombre del cliente a buscar">
-        <button id="botonBuscar">Buscar prestamo por nombre de cliente</button>
-
-        <div id="resultado"></div>
-
+            <div id="resultado"></div>
 
     </main>
-    <footer>
 
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Sweetalert-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!--Toastify-->
     <script src="SimuladorDePrestamos.js"></script>
 </body>
 </html>

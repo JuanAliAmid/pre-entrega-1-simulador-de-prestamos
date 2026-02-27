@@ -1,0 +1,45 @@
+{"prestamos": [
+        {
+            "id": 0,
+            "nombre": "Amelia",
+            "monto": 150000,
+            "cuotas":3
+        },
+        {   
+            "id": 2,
+            "nombre": "Elias",
+            "monto": 230000,
+            "cuotas":6
+        },
+        {   
+            "id": 4,
+            "nombre": "Camelia",
+            "monto": 850000,
+            "cuotas":12
+        },
+        {   
+            "id": 7,
+            "nombre": "Roman",
+            "monto": 100000,
+            "cuotas":0
+        },
+        {   
+            "id": 8,
+            "nombre": "Mari",
+            "monto": 360000,
+            "cuotas":6
+        },
+        {   
+            "id": 9,
+            "nombre": "Rigel",
+            "monto": 1500000,
+            "cuotas":12
+        },
+        {   
+            "id": 10,
+            "nombre": "Aurelio",
+            "monto": 600000,
+            "cuotas":3
+        }
+    ]
+}

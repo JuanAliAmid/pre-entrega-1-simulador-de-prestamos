@@ -1,0 +1,64 @@
+main{
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+} 
+
+h1:hover{
+    transform: scale(1.03);
+}
+
+input{
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+select{
+    font-size: 15px;
+}
+button{
+    font-size: 15px;
+}
+.section-content{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 20px;
+    gap: 5px;
+    font-size: 10px;
+}
+.botones{
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.botones:hover{
+    transform: scale(1.03);
+    background: #8fc09b; 
+}
+.botones:active{
+    transform: scale(0.90);
+}
+
+.section-listar-total{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.section-agregar{
+    display: flex;
+    gap: 5px;
+}
+.select{
+    transition: 0.3s;
+}
+.select:hover{
+    transform: scale(1.03);
+    background: #a5cca7;
+}
